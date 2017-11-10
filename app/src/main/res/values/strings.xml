@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">HuiFuCashier</string>
+    <string name="title_activity_login"> 登 录 </string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">用户名/手机号</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short"> 密码过短 </string>
+    <string name="error_invalid_email">输入错误</string>
+    <string name="error_invalid_password">密码无效</string>
+    <string name="error_incorrect_password">密码不对</string>
+    <string name="error_field_required">这项必填哦</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
+    <string name="default_required_validation_message">不能为空</string>
+    <string name="default_required_length_message_min_max">长度必须在 %1$d 和 %2$d 之间.</string>
+    <string name="default_required_length_message_min">长度不能低于 %1$d.</string>
+    <string name="default_required_length_message_max">长度不能超过 %1$d.</string>
+    <string name="default_regex_validation_message">输入格式不正确.</string>
+    <string name="confirm_password_error">两次密码输入不一致</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="one_fra_noPartake">不参与优惠金额</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+    <string name="num0">0</string>
+    <string name="dot">.</string>
+    <string name="add">+</string>
+    <string name="reduce">-</string>
+    <string name="ride">=</string>
+    <string name="except">/</string>
+    <string name="delete">删除</string>
+    <string name="clear">清空</string>
+    <string name="checkQ">验券</string>
+    <string name="receivables">收款</string>
+    <string name="order">订单</string>
+    <string name="duizhang">对账</string>
+    <string name="my">我的</string>
+    <string name="refound">退 款</string>
+    <string name="dayscale">日 结</string>
+    <string name="about">关 于</string>
+    <string name="setting">设 置</string>
+    <string name="mysw">我的商务顾问</string>
+    <string name="kefu">客服热线</string>
+    <string name="changePwd">修改密码</string>
+    <string name="help">寻求帮助</string>
+    <string name="equal">=</string>
+    <string name="large_text">
+      large text
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>

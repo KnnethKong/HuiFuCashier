@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/four_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/my_icon" />
+
+
+        <TextView
+            android:id="@+id/four_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/four_img"
+            android:ellipsize="start"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:text="茉莉花2585296582825885858522"
+            android:textColor="#362E2B"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/four_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/four_store_name"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/four_store_name"
+            android:background="@drawable/hongquan"
+            android:text="店长"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/four_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/four_store_name"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/four_img"
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:text="username" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/four_refound_rl"
+                style="@style/four_fra_s1">
+
+                <ImageView
+                    android:id="@+id/four_refound_iv"
+                    style="@style/four_fra_s5"
+                    android:src="@mipmap/my_tui" />
+
+                <TextView
+                    style="@style/four_fra_s4"
+                    android:layout_toRightOf="@id/four_refound_iv"
+                    android:text="@string/refound" />
+
+                <ImageView style="@style/four_fra_s3" />
+            </RelativeLayout>
+
+            <View style="@style/four_fra_s2" />
+
+            <RelativeLayout
+                android:id="@+id/four_jiesuan_rl"
+                style="@style/four_fra_s1">
+
+                <ImageView
+                    android:id="@+id/four_jiesuan_iv"
+                    style="@style/four_fra_s5"
+                    android:src="@mipmap/rijie_icon" />
+
+                <TextView
+                    style="@style/four_fra_s4"
+                    android:layout_toRightOf="@id/four_jiesuan_iv"
+                    android:text="@string/dayscale" />
+
+                <ImageView style="@style/four_fra_s3" />
+            </RelativeLayout>
+
+            <View style="@style/four_fra_s2" />
+
+            <RelativeLayout
+                android:id="@+id/four_setting_rl"
+                style="@style/four_fra_s1">
+
+                <ImageView
+                    android:id="@+id/four_setting_iv"
+                    style="@style/four_fra_s5"
+                    android:src="@mipmap/my_seeting" />
+
+                <TextView
+                    style="@style/four_fra_s4"
+                    android:layout_toRightOf="@id/four_setting_iv"
+                    android:text="@string/setting" />
+
+                <ImageView style="@style/four_fra_s3" />
+            </RelativeLayout>
+
+            <View style="@style/four_fra_s2" />
+
+            <RelativeLayout
+                android:id="@+id/four_change_rl"
+                style="@style/four_fra_s1">
+
+                <ImageView
+                    android:id="@+id/four_change_img"
+                    style="@style/four_fra_s5"
+                    android:src="@android:drawable/ic_secure" />
+
+                <TextView
+                    style="@style/four_fra_s4"
+                    android:layout_toRightOf="@id/four_change_img"
+                    android:text="@string/changePwd" />
+
+                <ImageView style="@style/four_fra_s3" />
+            </RelativeLayout>
+
+            <View style="@style/four_fra_s2" />
+
+            <RelativeLayout
+                android:id="@+id/four_connect_rl"
+                style="@style/four_fra_s1">
+
+                <ImageView
+                    android:id="@+id/four_connect_iv"
+                    style="@style/four_fra_s5"
+                    android:src="@mipmap/my_guwen" />
+
+                <TextView
+                    style="@style/four_fra_s4"
+                    android:layout_toRightOf="@id/four_connect_iv"
+                    android:text="@string/mysw" />
+
+                <ImageView style="@style/four_fra_s3" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/four_help_rl"
+                style="@style/four_fra_s1">
+
+                <ImageView
+                    android:id="@+id/four_help_iv"
+                    style="@style/four_fra_s5"
+                    android:src="@mipmap/my_help" />
+
+                <TextView
+                    style="@style/four_fra_s4"
+                    android:layout_toRightOf="@id/four_help_iv"
+                    android:text="@string/help" />
+
+                <ImageView style="@style/four_fra_s3" />
+            </RelativeLayout>
+
+            <View style="@style/four_fra_s2" />
+
+
+            <RelativeLayout
+                android:id="@+id/four_kefu_rl"
+                style="@style/four_fra_s1">
+
+                <ImageView
+                    android:id="@+id/four_kefu_iv"
+                    style="@style/four_fra_s5"
+                    android:src="@mipmap/my_kefu" />
+
+                <TextView
+                    style="@style/four_fra_s4"
+                    android:layout_toRightOf="@id/four_kefu_iv"
+                    android:text="@string/kefu" />
+
+                <ImageView style="@style/four_fra_s3" />
+            </RelativeLayout>
+
+            <View style="@style/four_fra_s2" />
+
+            <RelativeLayout
+                android:id="@+id/four_about_rl"
+                style="@style/four_fra_s1">
+
+                <ImageView
+                    android:id="@+id/four_about_iv"
+                    style="@style/four_fra_s5"
+                    android:src="@mipmap/my_about" />
+
+                <TextView
+                    style="@style/four_fra_s4"
+                    android:layout_toRightOf="@id/four_about_iv"
+                    android:text="@string/about" />
+
+                <ImageView style="@style/four_fra_s3" />
+            </RelativeLayout>
+
+            <View style="@style/four_fra_s2" />
+
+            <Button
+                android:id="@+id/myfragment_loginout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/skd_btng"
+                android:text="退出登录"
+                android:textColor="#ffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

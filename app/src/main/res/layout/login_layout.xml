@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:validation="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/login_none_ed"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    validation:autoTrim="true"
+                    validation:isRequired="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/login_ed_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_name"
+                        android:inputType="text"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--  <com.weijing.widget.ValidatedTextInputLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="20dp"
+                      android:paddingRight="20dp"
+                      validation:autoTrim="true"
+                      validation:isRequired="true">
+
+                      <AutoCompleteTextView
+                          android:id="@+id/login_ed_name"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/prompt_name"
+                          android:inputType="text"
+                          android:maxLength="12"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:textColor="@color/white"
+                          android:textSize="16sp" />
+
+                  </com.weijing.widget.ValidatedTextInputLayout>
+  -->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:counterEnabled="true"
+                    app:passwordToggleDrawable="@drawable/edit_eye"
+                    app:passwordToggleEnabled="true"
+                    validation:autoValidate="true">
+
+                    <EditText
+                        android:id="@+id/login_ed_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+                <!--<com.weijing.widget.ValidatedTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:counterEnabled="true"
+                    app:passwordToggleDrawable="@drawable/edit_eye"
+                    app:passwordToggleEnabled="true"
+                    validation:autoValidate="true">
+
+                    <EditText
+                        android:id="@+id/login_ed_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16sp" />
+
+                </com.weijing.widget.ValidatedTextInputLayout>-->
+
+                <Button
+                    android:id="@+id/login_btn"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/login_btn"
+                    android:text="@string/action_sign_in"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
