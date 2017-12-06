@@ -14,12 +14,19 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
     }
 }
+//allprojects {
+//    repositories {
+//        jcenter()
+//    }
+//}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
